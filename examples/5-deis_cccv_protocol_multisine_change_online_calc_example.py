@@ -13,9 +13,9 @@ from pyeclab.techniques import ChronoAmperometry, ChronoPotentiometry, OpenCircu
 from trueformawg import TrueFormAWG, import_awg_txt
 from pypicostreaming import Picoscope5000a
 
-from deistools.acquisition.utils import WaveFormSequence
+from elma.utils import WaveFormSequence
 from deistools.processing import MultiFrequencyAnalysis, fermi_dirac_filter
-from deistools.acquisition import DEISchannel, PicoCalculator, BlockCalculator
+from elma import DEISchannel, PicoCalculator, BlockCalculator
 
 
 # ===============

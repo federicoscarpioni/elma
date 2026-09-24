@@ -1,5 +1,5 @@
-from deistools.acquisition.multisinegen import MultisineGenerator, MultisineGeneratorCombined, WaveFormSequence, custom_serialization_factory
-from deistools.acquisition.deischannel import DEISchannel
-from deistools.acquisition.utils import ConditionAverage, condition_avarage_serialization_factory
-from deistools.acquisition.picocalculator import PicoCalculator
-from deistools.acquisition.blockcalculator import BlockCalculator, ConditionAverageScope
+from elma.multisinegen import MultisineGenerator, MultisineGeneratorCombined, WaveFormSequence, custom_serialization_factory
+from elma.deischannel import DEISchannel
+from elma.utils import ConditionAverage, condition_avarage_serialization_factory
+from elma.picocalculator import PicoCalculator
+from elma.blockcalculator import BlockCalculator, ConditionAverageScope

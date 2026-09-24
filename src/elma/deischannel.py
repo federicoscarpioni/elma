@@ -6,9 +6,9 @@ from dataclasses import dataclass, field, asdict
 from typing import Union
 
 from pyeclab import Channel
-from deistools.acquisition.utils import ConditionAverage, check_software_limits, condition_avarage_serialization_factory
-from deistools.acquisition.picocalculator import PicoCalculator
-from deistools.acquisition.multisinegen import MultisineGenerator, MultisineGeneratorCombined, WaveFormSequence, custom_serialization_factory
+from elma.utils import ConditionAverage, check_software_limits, condition_avarage_serialization_factory
+from elma.picocalculator import PicoCalculator
+from elma.multisinegen import MultisineGenerator, MultisineGeneratorCombined, WaveFormSequence, custom_serialization_factory
 
 
 @dataclass

@@ -2,7 +2,7 @@ from pathlib import Path
 
 from pyeclab import BANDWIDTH, E_RANGE, I_RANGE, BiologicDevice, ChannelConfig, FileWriter
 from pyeclab.techniques import OpenCircuitVoltage
-from deistools.acquisition import DEISchannel
+from elma import DEISchannel
 from pypicostreaming import Picoscope5000a
 
 # User parameters

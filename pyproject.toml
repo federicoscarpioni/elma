@@ -1,7 +1,7 @@
 [project]
-name = "deistools"
+name = "elma"
 version = "0.1.0"
-description = "Collecation of tools for non-stationary (dynamic) impedance mesurment."
+description = "Electrochemistry Lab Multi-frequency Acquisition: hardware drivers and live signal acquisition for the lab's multi-frequency impedance measurement setup."
 authors = [
     {name = "Federico Scarpioni", email = "federicoscarpioni@gmail.com"},
 ]
@@ -12,22 +12,18 @@ readme = "README.md"
 requires-python = ""
 dependencies = [
     "numpy",
-    "matplotlib",
+    "pyeclab",
+    "pypicostreaming",
+    "trueformawg",
+    "npbuffer",
+    "deistools @ git+https://github.com/federicoscarpioni/DEIStools.git",
 ]
 license = "MIT"
 license-files = ["LICENSE"]
 
-[project.optional-dependencies]
-optional = [
-    "pyeclab",
-    "pypicostreaming",
-    "trueformawg",
-    "npbuffer"
-]
-
 [project.urls]
-Repository = "https://github.com/federicoscarpioni/deistools.git"
-Issues = "https://github.com/federicoscarpioni/deistools/issues"
+Repository = "https://github.com/federicoscarpioni/elma.git"
+Issues = "https://github.com/federicoscarpioni/elma/issues"
 
 
 [tool.ruff]

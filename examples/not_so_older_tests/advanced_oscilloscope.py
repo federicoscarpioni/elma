@@ -2,7 +2,7 @@ from pathlib import Path
 import numpy as np
 import json
 
-from deistools.acquisition import DEISchannel,ZPico5000a
+from elma import DEISchannel,ZPico5000a
 from pyeclab import BANDWIDTH, E_RANGE, I_RANGE, BiologicDevice, Channel, ChannelConfig, FileWriter
 from pyeclab.techniques import ChronoPotentiometry, Loop, generate_xctr_param
 
