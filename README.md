@@ -14,6 +14,15 @@ Impedance estimation from the acquired (or any other) signals is hardware-agnost
 
 `examples/` contains full measurement scripts showing acquisition + processing wired together against real hardware.
 
+## Dependencies
+
+elma                 orchestration: channels, sequencing, live processing
+├── pyeclab          BioLogic potentiostat
+├── pypicostreaming  PicoScope streaming
+├── trueformawg      waveform generator
+├── npbuffer         circular buffer for streamed data
+└── deistools        impedance estimation (hardware-agnostic)
+
 ## History note
 
 Split out of [`DEIStools`](https://github.com/federicoscarpioni/DEIStools) `v0.1.0`, which kept acquisition and processing/visualisation in one repo. That combined snapshot remains available at the `DEIStools` repo's `v0.1.0` tag.
