@@ -33,7 +33,7 @@ Se examples folder for usage.
 
 ## Notes
 
-Multi-sine signals can be generated with the package 
+Multi-sine signals can be generated with the package [multisine](https://github.com/federicoscarpioni/multisine).
 
 ## History note
 
