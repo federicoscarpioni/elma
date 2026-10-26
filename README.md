@@ -4,6 +4,14 @@ ELMA (Electrochemistry Lab Multi-frequency Acquisition) drives the lab's hardwar
 
 Impedance estimation from the acquired (or any other) signals is hardware-agnostic and lives in the separate [`deistools`](https://github.com/federicoscarpioni/DEIStools) package, which ELMA depends on.
 
+## Features
+
+- Acquire multi-frequency data at high frequency while a potentiostat is performing electrochemical measurements independently.
+- Runs continuously on arbitrary long sequences of techniques; saves to disk at the change of technique. Run for weeks on coin cells without supervision.
+- Activate online computation of data thanks to the BlockCalculator object. Runs in multithread so acquisition is never interrupted.
+
+Se examples folder for usage.
+
 ## Contents
 
 - `elma.deischannel` — orchestrates a full DEIS measurement channel: potentiostat technique, waveform generator, and oscilloscope acquisition together.
@@ -16,12 +24,16 @@ Impedance estimation from the acquired (or any other) signals is hardware-agnost
 
 ## Dependencies
 
-elma                 orchestration: channels, sequencing, live processing
-├── pyeclab          BioLogic potentiostat
-├── pypicostreaming  PicoScope streaming
-├── trueformawg      waveform generator
-├── npbuffer         circular buffer for streamed data
-└── deistools        impedance estimation (hardware-agnostic)
+- numpy
+- [pyeclab](https://github.com/federicoscarpioni/pyeclab) (control BioLogic potentiostat)
+- [pypicostreaming](https://github.com/federicoscarpioni/pypicostreaming)  (manage PicoScope high frequency streaming)
+- [trueformawg](https://github.com/federicoscarpioni/trueformawg)      (waveform generator set up and automation)
+- [npbuffer](https://github.com/federicoscarpioni/npbuffer)         (circular buffer for streamed data from multiple channels)
+- [deistools](https://github.com/federicoscarpioni/DEIStools)        impedance estimation 
+
+## Notes
+
+Multi-sine signals can be generated with the package 
 
 ## History note
 
